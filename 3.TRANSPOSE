@@ -1,0 +1,36 @@
+rows=int(input("Enter the Number  the rows: "))
+
+column=int(input("Enter the Number of columns: "))
+
+print("Enter the elements of matrix: ")
+
+matrix=[[int(input()) for i in range(column)] for i in range(rows)]
+
+print("Your Matrix is: ")
+
+for n in matrix:
+
+    print(n)
+
+result=[[0 for i in range(rows)]for j in range(column)]
+
+for i in range(rows):
+
+    for j in range(column):
+
+        result[i][j]= matrix [j][i]
+
+print("Transpose of matrix is :")
+
+for r in result:
+
+    print(r)
+
+
+
+
+
+
+
+
+
